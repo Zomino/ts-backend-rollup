@@ -1,9 +1,7 @@
 import bonjour from 'bonjour';
-import express from 'express';
 
-import Greeting from './Greeting.ts';
-
-const router = express.Router();
+import Greeting from './Greeting.js';
+import router from './index.js';
 
 router.get('/greetings', async (_, res) => {
     try {
@@ -33,5 +31,3 @@ router.post('/greetings/bonjour', async (_, res) => {
         res.sendStatus(500);
     }
 });
-
-export default router;
