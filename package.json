@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --watch src --ext .js,.ts --exec 'npm run build && node --inspect=0.0.0.0:21100 ./build/bundle'",
     "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript"
   },
   "repository": {
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.0",
+    "nodemon": "^2.0.22",
     "rollup": "^3.20.2",
     "tslib": "^2.5.0",
     "typescript": "^5.0.4"

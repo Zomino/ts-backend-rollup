@@ -6,4 +6,4 @@ const server = express();
 
 server.use('/', router);
 
-server.listen(3000, () => console.log('Server up: http://localhost:3000'));
+server.listen(3000, () => console.log('Server listening on http://localhost:3000'));
