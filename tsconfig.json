@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "nodenext",
+        "outDir": "dist",
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "es2016"
+    },
+}
