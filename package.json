@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch src --ext .js,.ts --exec 'npm run build && node --inspect=0.0.0.0:21100 ./build/bundle'",
+    "start": "nodemon --watch src --ext .js,.ts --exec 'npm run build && node --inspect ./build/bundle'",
     "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript"
   },
   "repository": {
