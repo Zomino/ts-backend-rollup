@@ -1,3 +1,4 @@
+import bonjour from 'bonjour';
 import express from 'express';
 
 import Greeting from './Greeting.ts';
@@ -18,6 +19,15 @@ router.post('/greetings', async (req, res) => {
 
     try {
         const greeting = await Greeting.create(body);
+        res.status(200).send(greeting);
+    } catch (err) {
+        res.sendStatus(500);
+    }
+});
+
+router.post('/greetings/bonjour', async (_, res) => {
+    try {
+        const greeting = await Greeting.create({ greeting: bonjour });
         res.status(200).send(greeting);
     } catch (err) {
         res.sendStatus(500);
