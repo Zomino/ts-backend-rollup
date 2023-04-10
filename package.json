@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/Zomino/ts-backend-rollup#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.0",
